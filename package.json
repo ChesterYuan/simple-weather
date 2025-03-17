@@ -8,7 +8,11 @@
     "dev": "nodemon src/api/server.js",
     "build": "cd src/frontend && npm run build",
     "install-frontend": "cd src/frontend && npm install",
-    "install-all": "npm install && npm run install-frontend"
+    "install-all": "npm install && npm run install-frontend",
+    "docker-build": "docker build -t simple-weather .",
+    "docker-run": "docker run -p 3000:3000 simple-weather",
+    "docker-compose-up": "docker-compose up --build",
+    "docker-compose-down": "docker-compose down"
   },
   "keywords": [
     "weather",
